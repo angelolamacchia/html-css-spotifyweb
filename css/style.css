@@ -35,6 +35,9 @@ li {
 .padding_10 {
     padding: 10px;
 }
+.padding_5 {
+    padding: 5px;
+}
 
 /* border */
 .border_bottom_grey {
@@ -134,6 +137,34 @@ header .user img {
     background-color: grey;
     border-radius: 50%;
 }
+/* impostazioni header mobile */
+.header_mobile {
+    width: 40px;
+    height: calc(100% - 80px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.header_mobile #logo {
+    width: 40px;
+}
+.menu_mobile a {
+    display: block;
+}
+.menu_mobile img {
+    width: 40px;
+    padding: 5px;
+}
+.header_bottom_mobile .fas {
+    text-align: center;
+    width: 40px;
+}
+.header_bottom_mobile .user img  {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
 
 
 
@@ -157,14 +188,15 @@ footer {
     left: 0;
     z-index: 999;
 }
-footer .footer_brano {
+footer .footer_player {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/* footer brano */
 footer .brano {
-    width: 200px;
+    width: 300px;
     display: flex;
     align-items: center;
 }
@@ -175,13 +207,73 @@ footer #sinister {
 footer .brano_img {
     
 }
+footer .brano_content {
+    padding-left: 5px;
+    padding-right: 20px;
+}
+footer .brano_icons .far {
+    padding-left: 5px;
+}
 .brano_name {  
-    
+    color: grey;
+}
+/* footer player */
+footer .player_control {
+    width: 40%;
+}
+footer .player_icons {
+    display: flex;
+    justify-content: center;
+}
+footer .icons_container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+footer .play {
+    font-size: 30px;
+}
+footer .player_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.progress_bar {
+    height: 5px;
+    width: 90%;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.progress {
+    height: 2px;
+    width: 25%;
+    color: grey;
+}
+/* footer volume */
+footer .volume {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+footer .volume .fas {
+    padding: 0 5px;
 }
 
-.footer_brano .player {
-    
-}
-.footer_brano .volume {
-    width: 200px;
-}
+
+
+
+
+
+/* impostazioni responsive */
+@media screen and (max-width: 767px) {
+    main {
+        width: calc(100% - 40px);
+        height: 100%;
+        margin-left: 40px;
+        background-color: lightseagreen;
+    }
+} 
