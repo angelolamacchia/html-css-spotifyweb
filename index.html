@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="hidden-xs">
+    <div class="wrapper"> <!--contenitore generale-->
+        <header class="hidden-xs"> <!--header generale non visibile mobile-->
             <div class="header_content bg_black">
                 <div class="header_top">
                     <img id="logo" class="padding_10" src="img/logo.svg" alt="">
@@ -25,27 +25,25 @@
                             <a href=""><li><img src="img/libreria.svg" alt=""> La tua libreria</li></a>
                         </ul>
                     </div>
-                </div>
-                
+                </div>              
                 <div class="header_bottom padding_10">
                     <div class="playlist">
                         <h5 class="">PLAYLIST</h5>
-                        <div class="font_bold add_playlist"><i class="fas fa-plus-square plus_icon"></i> Crea playlist</div>
+                        <div class="font_bold add_playlist"><a href=""><i class="fas fa-plus-square plus_icon"></i> Crea playlist</a></div>
                         <div class="playlist_content">
                             <ul>
-                                <li>Nome Playlist 1</li>
-                                <li>Nome Playlist 2</li>
-                                <li>Nome Playlist 3</li>
-                                <li>Nome Playlist 4</li>
-                                <li>Nome Playlist 5</li>
-                                <li>Nome Playlist 6</li>
-                                <li>Nome Playlist 7</li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="user">
                         <div class="user_content">
-                            <p class="border_bottom_grey"><i class="fas fa-arrow-circle-down"></i> Install app</p>
+                            <p class="border_bottom_grey"><a href=""> <i class="fas fa-arrow-circle-down"></i> Install app</a></p>
                             <h4 class="font_white"><img src="img/profile.svg" alt=""> Angelo Lama</h4>    
                         </div>
                     </div>
@@ -53,7 +51,7 @@
             </div> 
         </header>
 
-        <!-- header mobile -->
+        <!-- header visibile solo mobile -->
         <header class="header_mobile visible-xs">  
             <div class="header_content_mobile bg_black visible-xs">
                 <div class="header_top_mobile">
@@ -66,7 +64,6 @@
                         </ul>
                     </div>
                 </div>
-                
                 <div class="header_bottom_mobile">
                     <div class="user">
                         <div class="user_content">
@@ -77,10 +74,146 @@
                 </div>
             </div>  
         </header>
+        <!-- fine header -->
     
-    
+        <!-- inizio main -->
         <main>
-    
+            <div class="upgrade_bar">
+                <div class="upgrade_bar_content text-center">
+                    <div><a href="">EFFETTUA L'UPGRADE</a></div>
+                </div>
+            </div>
+
+            <section class="main_bar">
+                <ul class="padding_10">
+                    <a href="#"><li class="">IN EVIDENZA <hr class="visible_hr"></li></a>
+                    <a href="#"><li>PODCAST <hr></li></a>
+                    <a href="#"><li>CLASSIFICHE <hr></li></a>
+                    <a href="#"><li>GENERI E MOOD <hr></li></a>
+                    <a href="#"><li>NUOVE USCITE <hr></li></a>
+                    <a href="#"><li>SCOPRI <hr></li></a>
+                </ul>
+            </section>
+
+            <section class="recent">
+                <div class="container-fluid">
+                    <h3>Recently played</h3>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <div class="img_hover">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                </div>
+                                <div class="card_text">
+                                    <h5>Heavy Metal</h5>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/stranger.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
+                                    <p>Kyle Dixon & Michael Stein</p>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>A quiet place</h5>
+                                    <p>Subtitle</p>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/split.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Split</h5>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/cure.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>A cure for wellness</h5>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3  col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/sinister.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Sinister</h5>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="suggested">
+                <div class="container-fluid">
+                    <h3>Creato per Angelo Lama</h3>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/radar.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Release Radar</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Daily Mix 1</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular">
+                <div class="container-fluid">
+                    <h3>Artisti più popolari</h3>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/youg.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Lana del Rey</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2">
+                            <div class="card text-center">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <div class="card_text">
+                                    <h5>Ludovico<br>Einaudi</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     
     
