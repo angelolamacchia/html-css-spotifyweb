@@ -137,7 +137,8 @@ header .playlist li {
 header .user {
     position: absolute;
     bottom: 0;
-    width: 90%;
+    left: 0;
+    width: 100%;
     z-index: -1;
 }
 header .user_content {
