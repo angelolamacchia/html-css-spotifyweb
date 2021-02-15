@@ -258,6 +258,29 @@ main .main_bar a:hover hr
 .recent img, .suggested img, .popular img {
     width: 100%;
 }
+.recent .card_image {
+    position: relative;
+}
+.card_image:hover .img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.7);
+}
+.card_image .fas {
+    display: none;
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+}
+.card_image:hover .fas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .recent .card_text p {
     color: grey;
 }
@@ -275,8 +298,6 @@ main .main_bar a:hover hr
 .popular img {
     border-radius: 50%;
 }
-
-
 
 /* impostazioni footer */
 footer {
@@ -305,18 +326,23 @@ footer #sinister {
     width: 50px;
     height: 50px;
 } 
-footer .brano_img {
-    
-}
 footer .brano_content {
     padding-left: 5px;
     padding-right: 20px;
 }
 footer .brano_icons .far {
     padding-left: 5px;
-}
-.brano_name {  
     color: grey;
+    font-size: 20px;
+}
+footer .brano_icons .far:hover {
+    color: white;
+}
+.brano_name a {  
+    color: grey;
+}
+.brano_name a:hover {
+    color: white;
 }
 /* footer player */
 footer .player_control {
@@ -336,6 +362,9 @@ footer .icons_container {
 footer .play {
     font-size: 30px;
 }
+footer .play:hover {
+    transform: scale(1.2);
+}
 footer .player_bar {
     display: flex;
     align-items: center;
@@ -349,10 +378,25 @@ footer .player_bar {
     border-radius: 5px;
     margin: 0 10px;
 }
+.progress_bar:hover .progress {
+    background-color: #adff2f;
+    cursor: pointer;
+}
+.progress_bar:hover .fa-circle {
+    visibility: visible;
+}
 .progress {
     height: 2px;
     width: 25%;
     color: grey;
+    float: left;
+}
+.progress_bar i {
+    font-size: 16px;
+    float: left;
+    position: relative;
+    bottom: 6px;
+    visibility: hidden;
 }
 /* footer volume */
 footer .volume {
@@ -360,13 +404,12 @@ footer .volume {
     display: flex;
     align-items: center;
 }
-footer .volume .fas {
+footer .volume .fas:not(.fa-circle) {
     padding: 0 5px;
 }
-
-
-
-
+.volume .progress {
+    width: 40%;  
+}
 
 
 
