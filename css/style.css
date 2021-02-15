@@ -103,6 +103,7 @@ header .menu li img {
     display: block;
     text-decoration: none;
     color: grey;
+    border-left: 3px solid transparent;
 }
 .menu a:first-child {
     border-left: 3px solid #adff2f;
@@ -395,7 +396,7 @@ footer .player_bar {
     font-size: 16px;
     float: left;
     position: relative;
-    bottom: 6px;
+    bottom: 7px;
     visibility: hidden;
 }
 /* footer volume */
