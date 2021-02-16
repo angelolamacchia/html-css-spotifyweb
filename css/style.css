@@ -7,8 +7,7 @@
 
 body {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;  
 }
 
 .wrapper {
@@ -85,9 +84,7 @@ header {
     flex-direction: column;
 }
 header a {
-    display: block;
     color: grey;
-    text-decoration: none;
 }
 header a:hover {
     text-decoration: none;
@@ -162,9 +159,6 @@ header .user img {
 .header_mobile #logo {
     width: 40px;
 }
-.menu_mobile a {
-    display: block;
-}
 .menu_mobile img {
     width: 40px;
     padding: 5px;
@@ -222,9 +216,10 @@ main {
     transform: scale(1.1);
 }
 .upgrade_bar_content a {
-    display: block;
-    text-decoration: none;
     color: white;
+}
+.upgrade_bar_content a:hover {
+    text-decoration: none;
 }
 main .main_bar {
     display: flex;
@@ -247,12 +242,11 @@ main .main_bar hr {
     background-color: #adff2f;
     border: 1px solid #adff2f;
 }
-main .main_bar hr:not(.visible_hr){
+main .main_bar hr:not(.visible_hr) {
     visibility: hidden;
  }
 
-main .main_bar a:hover hr
- {
+main .main_bar a:hover hr {
     visibility: visible;
 }
 
@@ -285,7 +279,6 @@ main .main_bar a:hover hr
     justify-content: center;
     align-items: center;
 }
-
 .recent .card_text p {
     color: grey;
 }
