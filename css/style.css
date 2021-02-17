@@ -79,8 +79,7 @@ header {
 }
 .header_content { 
     height: 100%; 
-    display: flex;
-    flex-direction: column;
+    min-height: 370px;
 }
 header a {
     color: grey;
@@ -90,10 +89,15 @@ header a:hover {
     color: white;
 }
 /* impostazioni header top */
+.header_top {
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
 #logo {
     width: 70%;
 }
-/* impostazioni header menu */
 header .menu li img {
     height: 20px;
 }
@@ -102,7 +106,7 @@ header .menu li img {
     line-height: 20px;
     vertical-align: middle;
     margin: 10px 0;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .menu a {
     border-left: 3px solid transparent;
@@ -110,19 +114,14 @@ header .menu li img {
 .menu a:first-child {
     border-left: 3px solid #adff2f;
 }
-header .title_playlist .add_playlist {
-    line-height: 30px;
-    font-size: 15px;
-}
-header .title_playlist {
-    padding: 10px 10px 0 10px;
-}
-/* impostazioni header playlist */
 header .playlist {
+    overflow-y: hidden;
+    padding: 0 15px 0 15px;
+}
+header .playlist_content {
+    height: 80%;
     min-height: 100px;
-    overflow: auto;
-    flex-grow: 2;
-    padding: 0 10px 0 10px;
+    overflow-y: auto;
 }
 header .plus_icon {
     font-size: 30px;
@@ -131,10 +130,11 @@ header .plus_icon {
 header .playlist li {
     padding: 5px 0;
 }
-/* impostazioni header user */
-header .user {
+/* impostazioni header bottom */
+header .header_bottom {
+   height: 70px; 
    flex-shrink: 0; 
-   padding: 0 10px 0 10px;
+   padding: 0 15px 0 15px;
 }
 header .user_content {
     line-height: 25px;
